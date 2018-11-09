@@ -6,7 +6,7 @@ module.exports = {
     output : {
         path : path.join(__dirname,'/dist'),
         filename : 'index_bundled.js',
-        publicPath: '/Todo-React-App'
+        publicPath: '/'
     },
     module:{
         rules : [{
