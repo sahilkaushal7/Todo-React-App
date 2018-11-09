@@ -1,0 +1,100 @@
+body{
+    background-color:azure;
+}
+.Todo{
+    display: inline-block;
+    width: 20%;
+    height : 100%;
+    color : black;
+    background-color: aqua;
+    text-align: center;
+    padding : 20px;
+    border : 1px solid cornflowerblue;
+    border-radius: 5px;
+    margin : 12px;
+    word-wrap: break-word;
+}
+hr{
+    border-color:cornflowerblue;
+}
+button{
+    border-radius: 5px;
+    padding : 5px;
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+    
+}
+@media only screen and (max-width: 600px) {
+    select{
+        width : 20vw;
+    }
+}
+
+.Nav{
+    width: 100%;
+    margin: -8px;
+    padding : 8px;
+    background-color: darkturquoise;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    display: inline-block;
+}
+li a{   
+    display:block;
+    margin : 10px;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+li a:hover{
+    color: grey;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.Form{
+    margin: 150px auto;
+    padding: 30px;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width : 50%;
+    height: 100%;
+    background-color :#00000085;
+    color:white;
+    border-radius: 10px;
+}
+.inputField{
+    padding : 5px;
+    margin : 10px;
+    width: 50%;
+    color:grey;
+    background-color: white;
+    border-radius: 5px;
+    border : 1px solid white;
+}
+.submitButton{
+    padding : 10px;
+    margin : 10px;
+    width: 52%;
+    font-size: 20px;
+    color:black;
+    background-color: greenyellow;
+    border-radius: 5px;
+    border : 1px solid greenyellow;
+}
+.submitButton:hover{
+    background-color: #86dc01;
+    border-color: #86dc01;
+}
