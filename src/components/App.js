@@ -24,13 +24,14 @@ class App extends Component{
         )
         return(
         <div>    
-        <BrowserRouter basename="/Todo-React-App">
+        <BrowserRouter>
         <Switch>   
         <PrivateRoute path="/edit/:id" component={Edit}/>
         <PrivateRoute path="/create" component={Create}/>
         <SharedRoute path="/todos" component={Todos}/>
         <Route path="/login" component={Login}/>
         <Route path="/" component={Login}/>
+        <Route component={Login}/>
         </Switch> 
         </BrowserRouter>
         </div>)
