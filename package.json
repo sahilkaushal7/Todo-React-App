@@ -1,11 +1,14 @@
 {
+  "homepage": "https://sahilkaushal7.github.iom/Todo-React-App",
   "name": "my-boilerplate-app",
   "version": "1.0.0",
   "description": "Boiler plate for react app",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "Sahil Kaushal",
   "license": "MIT",
@@ -26,6 +29,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^1.0.1",
+    "gh-pages": "^2.0.1",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.24.0",
