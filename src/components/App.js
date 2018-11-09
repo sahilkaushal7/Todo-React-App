@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 import Login from './Login/Login';
-import {HashRouter, Route, Switch, Redirect} from 'react-router-dom';
+import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
 import Edit from './Edit/Edit';
 import Todos from './Todos/Todos';
 import { connect } from 'react-redux';
@@ -24,7 +24,7 @@ class App extends Component{
         )
         return(
         <div>    
-        <HashRouter>
+        <BrowserRouter>
         <Switch>   
         <PrivateRoute path="/edit/:id" component={Edit}/>
         <PrivateRoute path="/create" component={Create}/>
@@ -32,7 +32,7 @@ class App extends Component{
         <Route path="/login" component={Login}/>
         <Route path="/" component={Login}/>
         </Switch> 
-        </HashRouter>
+        </BrowserRouter>
         </div>)
     }
 }
